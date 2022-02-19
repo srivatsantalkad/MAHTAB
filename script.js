@@ -5,7 +5,6 @@ function createPost(title, body) {
     window.alert("Must not leave post title or body empty.");
     return;
   }
-  populateStorage;
 
   const postContainer = document.createElement("div");
   const postTitle = document.createElement("div");
@@ -44,22 +43,6 @@ function loadCreatePostBtn() {
 
 function loadPage() {
   loadCreatePostBtn();
+  createPost("First Post", "wats up");
 }
 loadPage();
-
-function setPosts() {
-  let posts = localStorage.getItem("posts");
-  for (let i = 0; i < posts.length; i += 1) {
-    createPost(posts[i], posts[i]);
-    console.log(posts[i]);
-  }
-}
-function populateStorage() {
-  localStorage.setItem("posts", arr);
-  setPosts();
-}
-if (!localStorage.getItem("posts")) {
-  populateStorage();
-} else {
-  setPosts();
-}
