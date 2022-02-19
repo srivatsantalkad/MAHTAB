@@ -32,10 +32,6 @@ input {
   padding: 0.5em;
 }
 
-.create-post-btn:hover {
-  cursor: pointer;
-}
-
 .content {
   display: flex;
   flex-flow: column wrap;
@@ -58,12 +54,14 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   font-size: 20px;
 }
 
 .sample-post-body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -74,4 +72,18 @@ footer {
   align-items: center;
 
   margin-top: 25%;
+}
+* {
+  flex-wrap: wrap;
+}
+
+.remove-post-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  padding: 1em;
+}
+button:hover {
+  cursor: pointer;
 }
