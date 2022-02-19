@@ -82,7 +82,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 5%;
-  padding: 1em;
+  padding: 0.25em;
 }
 button:hover {
   cursor: pointer;
